@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - 'KasirKu-Android-Project.zip'
+      - 'KasirKu-Android-Project-BARU.zip'
       - '.github/workflows/android.yml'
 
 jobs:
@@ -28,7 +28,7 @@ jobs:
           gradle-version: '8.7'
 
       - name: Ekstrak proyek
-        run: unzip -o KasirKu-Android-Project.zip -d .
+        run: unzip -o KasirKu-Android-Project-BARU.zip -d .
 
       - name: Bangun APK
         run: gradle -p KasirKu assembleDebug
